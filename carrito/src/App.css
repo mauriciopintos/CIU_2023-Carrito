@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,23 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+/* Estilo para iconos de redes*/
+
+.icono {
+  color: #ede8e8; /* Color claro */
+  transition: transform 0.2s; /* Transición suave para el efecto de agrandamiento */
+  margin: 10px;
+}
+
+.icono:hover,
+.icono:focus {
+  color: #f2f2f2; /* Color claro en estado hover o focus */
+  transform: scale(1.7); /* Agrandamiento del icono */
+}
+
+.App-footer p {
+  margin: 0%;
 }
