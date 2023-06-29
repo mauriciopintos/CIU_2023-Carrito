@@ -5,7 +5,7 @@ import Producto from './Producto';
 
 const Main = () => {
     // Creamos nuestrlista de productos mediante un hook
-    const [productos, guardarProducto] = useState(
+    const [productos, guardarProductos] = useState(
         [
         { id: 1, articulo: "Jarro termico", precio: 2500 },
         { id: 2, articulo: "Decantador", precio: 2000 },
@@ -16,19 +16,23 @@ const Main = () => {
         ]
     );
 
+    // Creamos el carrito
+    const [carrito, agregarProducto] = useState([]);
+
     return (
         <div>
             <h1>Listado de productos</h1>
-            {productos.map( producto => (
-                <Producto 
-                    producto={producto}
-                    productos={productos}
-                    key={producto.id}
-                />
-            ))
-
+            {
+                productos.map( producto => (
+                    <Producto 
+                        producto={producto}
+                        productos={productos}
+                        key={producto.id}
+                        carrito={carrito}
+                        agregarProducto={agregarProducto}
+                    />
+                ))
             }
-
         </div>
     );
 }

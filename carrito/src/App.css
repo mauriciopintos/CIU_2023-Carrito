@@ -55,3 +55,13 @@
 .App-footer p {
   margin: 0%;
 }
+
+
+/* Estilo para el carrito*/
+.carrito{
+  position: fixed;
+  background-color: beige;
+  right: 0;
+  top: 10%;
+  width: auto;
+}
